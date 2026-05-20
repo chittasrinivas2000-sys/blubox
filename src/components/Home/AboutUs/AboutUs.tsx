@@ -1,6 +1,6 @@
 import React from "react";
-import bgImage from "../../assets/young-blogger-influencers-shooting-themselves.jpg";
-import logo from "../../assets/BBMediaWhite.png";
+import bgImage from "../../../assets/young-blogger-influencers-shooting-themselves.jpg";
+import logo from "../../../assets/BBMediaWhite.png";
 
 const AboutUs: React.FC = () => {
   return (

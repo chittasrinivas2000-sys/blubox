@@ -1,13 +1,16 @@
 import React from "react"
-import MainTop from "../../assets/MainTop.png"
-import BluboxBlack from "../../assets/BluboxLogoBlack.png"
-import Campaing from "../../assets/Campaing.webp"
-import talent from "../../assets/design.webp"
-import blubox from "../../assets/BluboxLogo.svg"
+import { useNavigate } from "react-router-dom";
+import MainTop from "../../../assets/MainTop.png"
+import BluboxBlack from "../../../assets/BluboxLogoBlack.png"
+import Campaing from "../../../assets/Campaing.webp"
+import talent from "../../../assets/design.webp"
+import blubox from "../../../assets/BluboxLogo.svg"
+
 
 const HeroSection: React.FC = () => {
+   const navigate = useNavigate();
   return (
-    <section className="relative overflow-hidden  px-4 py-10 sm:px-6 md:px-10 lg:px-20">
+    <section className="relative overflow-hidden  px-4 py-10 sm:px-6 md:px-10 lg:px-20 "  >
       <img
         src={MainTop}
         alt="Background Design"
@@ -18,7 +21,6 @@ const HeroSection: React.FC = () => {
           w-full md:w-3/4 
             pointer-events-none
             select-none
-            
         "
         />
 
@@ -83,10 +85,10 @@ const HeroSection: React.FC = () => {
         </div>
 
        
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 md:justify-items-center lg:justify-items-stretch">
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 md:justify-items-center lg:justify-items-stretch" >
           
    
-          <div  className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all duration-500 ease-in-out  hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px] ">
+          <div  className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all duration-500 ease-in-out  hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px] " onClick={() => navigate("/creator")}>
                 <div className="relative bg-[#e6ffd8] min-h-[150px] sm:h-[160px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-5 py-5 sm:px-7 sm:py-8 flex items-center justify-between shadow-sm overflow-hidden">
             
             <div className="max-w-[60%]">
@@ -111,7 +113,7 @@ const HeroSection: React.FC = () => {
         
 
      
-          <div className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all  duration-300 ease-in-out hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px]">
+          <div className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all  duration-300 ease-in-out hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px]" onClick={() => navigate("/talent")}>
             <div className="relative bg-[#fff4f0]  min-h-[150px] sm:h-[160px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-5 py-5 sm:px-7 sm:py-8 flex items-center justify-between shadow-sm overflow-hidden">
             
             <div className="max-w-[60%]">

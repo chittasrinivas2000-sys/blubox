@@ -1,6 +1,6 @@
-import cyanLeft from "../../assets/glass-top-1.webp"
-import cyanRight from "../../assets/glass-top-2.webp"
-import influencerImg from "../../assets/brand-img.webp"
+import cyanLeft from "../../../assets/glass-top-1.webp"
+import cyanRight from "../../../assets/glass-top-2.webp"
+import influencerImg from "../../../assets/brand-img.webp"
 
 const stats = [
   {

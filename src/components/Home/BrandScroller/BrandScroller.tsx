@@ -1,14 +1,14 @@
 import React from "react"
 
-import Cetaphil from "../../assets/cetaphil.jpg"
-import Venus from "../../assets/venus.jpg"
-import Braun from "../../assets/braun.jpg"
-import Garnier from "../../assets/garnier.jpg"
-import Swiss from "../../assets/sb.jpg"
-import Simple from "../../assets/simple.jpg"
-import Nykaa from "../../assets/nykaa.jpg"
-import Meesho from "../../assets/meesho.jpg"
-import Parachute from "../../assets/parachute.jpg"
+import Cetaphil from "../../../assets/cetaphil.jpg"
+import Venus from "../../../assets/venus.jpg"
+import Braun from "../../../assets/braun.jpg"
+import Garnier from "../../../assets/garnier.jpg"
+import Swiss from "../../../assets/sb.jpg"
+import Simple from "../../../assets/simple.jpg"
+import Nykaa from "../../../assets/nykaa.jpg"
+import Meesho from "../../../assets/meesho.jpg"
+import Parachute from "../../../assets/parachute.jpg"
 
 const brands = [
   Cetaphil,
