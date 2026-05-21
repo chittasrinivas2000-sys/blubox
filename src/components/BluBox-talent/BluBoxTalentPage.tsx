@@ -1,5 +1,5 @@
 import Talents from "./Talents"
-import TalentServices from "./talentServices"
+
 import JoinCommunity from "./TalentJoinCommunity"
 import Footer from "../Creator/Footer1"
 import BrandsCreators from "./BrandsCreators"
