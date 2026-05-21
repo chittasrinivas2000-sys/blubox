@@ -8,9 +8,8 @@ import linkedinIcon from "../../assets/linkedIn.png"
 import instagram from "../../assets/instagram.png"
 
 const Footer: React.FC = () => {
-        const navigate = useNavigate();
-
-  const handleNavigate = () => {
+    const navigate = useNavigate();
+    const handleNavigate = () => {
     navigate("/");
 
     window.scrollTo({
@@ -19,38 +18,39 @@ const Footer: React.FC = () => {
     });
   };
 
-   const handleNavigateCreators = () => {
-    navigate("/creators");
+  const handleNavigateCreatos =()=>{
+     navigate("/creators");
 
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
-  const handleNavigateBrand = () => {
-    navigate("/brand");
+  }
+
+  const handleNavigateBrand =()=>{
+     navigate("/brand");
 
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
-   const handleNavigateGallery = () => {
-    navigate("/gallery");
+  }
+   const handleNavigateGallery =()=>{
+     navigate("/gallery");
 
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
-   const handleNavigateContactUs = () => {
-    navigate("/contactus");
+  }
+   const handleNavigateContactUs =()=>{
+     navigate("/contactus");
 
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }
   return (
     <footer className="relative bg-black text-white overflow-hidden">
   
@@ -123,8 +123,8 @@ const Footer: React.FC = () => {
       </div>
         </div>
 
-        <nav className="flex flex-wrap justify-center gap-5 md:gap-8 mb-10 text-sm md:text-base">
-             <div
+        <nav className="flex flex-wrap justify-center gap-5 md:gap-15 mb-7 text-sm md:text-base">
+            <div
       onClick={handleNavigate}
       className="group relative overflow-hidden inline-block h-6 cursor-pointer"
     >
@@ -134,8 +134,8 @@ const Footer: React.FC = () => {
       </span>
     </div>
 
-           <div
-      onClick={handleNavigateCreators}
+              <div
+      onClick={handleNavigateCreatos}
       className="group relative overflow-hidden inline-block h-6 cursor-pointer"
     >
       <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-6">
@@ -143,8 +143,6 @@ const Footer: React.FC = () => {
         <span>creator</span>
       </span>
     </div>
-
-
               <div
       onClick={handleNavigateBrand}
       className="group relative overflow-hidden inline-block h-6 cursor-pointer"
@@ -155,7 +153,7 @@ const Footer: React.FC = () => {
       </span>
     </div>
 
-              <div
+            <div
       onClick={handleNavigateGallery}
       className="group relative overflow-hidden inline-block h-6 cursor-pointer"
     >
@@ -165,7 +163,7 @@ const Footer: React.FC = () => {
       </span>
     </div>
 
-        <div
+         <div
       onClick={handleNavigateContactUs}
       className="group relative overflow-hidden inline-block h-6 cursor-pointer"
     >
@@ -174,53 +172,47 @@ const Footer: React.FC = () => {
         <span>Contact Us</span>
       </span>
     </div>
-
         </nav>
 
       <div className="flex justify-center items-center">
 
-         <div className="w-full max-w-md ml-auto h-px bg-[#3F3F46] mb-10"></div>
-              <div className="flex justify-center gap-6 mb-10">
-          {/* Instagram */}
+         <div className="w-[210px] max-w-md ml-auto h-px bg-[#3F3F46] mb-10"></div>
+              <div className="flex justify-center gap-4 mb-10">
+       
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity duration-300 ml-2"
+            className="hover:opacity-70 transition-opacity duration-300 ml-4"
           >
             <img
             src={instagram}
             alt="Instagram"
-            className="w-15 h-15 md:w-15 md:h-15 lg:w-6 lg:h-6 object-contain"
+            className="w-10 h-10 md:w-5 md:h-6 object-contain"
           />
           </a>
 
-          {/* LinkedIn */}
+       
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity duration-300 mr-2"
+            className="hover:opacity-70 transition-opacity duration-300 mr-4"
           >
           <img
             src={linkedinIcon}
             alt="LinkedIn"
-            className="w-15 h-15 md:w-15 md:h-15 lg:w-6 lg:h-6 object-contain"
+            className="w-10 h-10 md:w-5 md:h-5 object-contain"
           />
           </a>
         </div>
-         <div className="w-full max-w-md  mr-auto h-px bg-[#3F3F46] mb-10"></div>
+         <div className="w-[210px] max-w-md  mr-auto h-px bg-[#3F3F46] mb-10"></div>
 
         </div>
-
+ 
+        <div className="flex flex-col md:flex-row justify-around items-center gap-6 md:gap-5 mb-10">
        
-
-      
-      
-        
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 mb-10">
-       
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ml-[130px]">
             <svg
               className="w-5 h-5 flex-shrink-0"
               fill="white"
@@ -241,7 +233,7 @@ const Footer: React.FC = () => {
         
           <div className="flex items-center gap-3 max-w-xl">
             <svg
-              className="w-5 h-5 flex-shrink-0"
+              className="w-9 h-9 flex-shrink-0"
               fill="white"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -250,13 +242,14 @@ const Footer: React.FC = () => {
             </svg>
 
             <span className="text-sm md:text-base text-center md:text-left">
-              1st Floor, H54, Sector 63, Noida, Uttar Pradesh - 201301
+         B4, Sector 63, 1st Floor,<br/>
+Noida - 201301.
             </span>
           </div>
         </div>
 
       
-        <div className="text-center text-xs md:text-sm text-gray-400">
+        <div className="text-center text-xs md:text-xs text-gray-400">
           Copyright © 2024 Blubox Media. All rights reserved. Site By{' '}
           <span className="text-white font-medium">
             Blue Infinity Tech

@@ -24,23 +24,23 @@ const HeroSection: React.FC = () => {
         "
         />
 
-      <div className="relative z-10 max-w-5xl mx-auto lg:mt-[70px] md:mt-[15px]">
+      <div className="relative z-10 max-w-[980px] mx-auto lg:mt-[70px] md:mt-[15px]">
         
        
-        <div className="flex flex-col lg:flex-row md:flex-row items-center lg:items-start justify-between ">
+        <div className="flex flex-col lg:flex-row md:flex-row items-center lg:items-start justify-between md:gap-5 lg:gap-0">
           
           {/* Heading */}
-          <div className="max-w-5xl">
-            <h4 className="text-[#07152d] font-bold  text-[22px] sm:text-[28px] md:text-[28px] lg:text-[36px] leading-tight ">
-              We are Blubox Media, The Internet’s Storytellers.<br/>
-              Where Reels Hit and Culture Moves.<br/>
-              No Noise. Just Influence.
-            </h4>
-          </div>
+         <div className="max-w-5xl">
+        <h4 className="text-center md:text-left text-[#07152d] font-bold text-[22px] font-['Montserrat'] sm:text-[28px] md:text-[28px] lg:text-[30px] leading-tight">
+          We are Blubox Media, The Internet’s Storytellers.<br/>
+          Where Reels Hit and Culture Moves.<br/>
+          No Noise. Just Influence.
+        </h4>
+      </div>
 
           
 
-      <div className="group relative w-[170px] sm:w-[220px] md:w-[250px] h-[110px] sm:h-[130px] md:h-[155px] mt-4 lg:mt-0 overflow-hidden flex-shrink-0">
+      <div className="group relative w-[140px] sm:w-[220px] md:w-[200px] h-[80px] sm:h-[130px] md:h-[155px] mt-4 lg:mt-0 lg:bottom-5 overflow-hidden flex-shrink-0">
         
         {/* First Image */}
         <img
@@ -85,11 +85,11 @@ const HeroSection: React.FC = () => {
         </div>
 
        
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 md:justify-items-center lg:justify-items-stretch" >
+        <div className="mt-7 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 md:justify-items-center lg:justify-items-stretch" >
           
    
-          <div  className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all duration-500 ease-in-out  hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px] " onClick={() => navigate("/creator")}>
-                <div className="relative bg-[#e6ffd8] min-h-[150px] sm:h-[160px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-5 py-5 sm:px-7 sm:py-8 flex items-center justify-between shadow-sm overflow-hidden">
+          <div  className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] md:w-md  rounded-br-[80px] rounded-bl-[80px]   transition-all duration-500 ease-in-out  hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px] " onClick={() => navigate("/creator")}>
+                <div className="relative bg-[#e6ffd8] min-h-[135px] sm:h-[145px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-8 py-8 sm:px-9 sm:py-10 flex items-center justify-between shadow-sm overflow-hidden">
             
             <div className="max-w-[60%]">
               <h5 className="text-[#07152d] font-bold text-lg sm:text-xl md:text-2xl mb-2">
@@ -113,8 +113,8 @@ const HeroSection: React.FC = () => {
         
 
      
-          <div className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all  duration-300 ease-in-out hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px]" onClick={() => navigate("/talent")}>
-            <div className="relative bg-[#fff4f0]  min-h-[150px] sm:h-[160px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-5 py-5 sm:px-7 sm:py-8 flex items-center justify-between shadow-sm overflow-hidden">
+          <div className="bg-[#fbfbfb] px-3 py-3 rounded-tl-[10px] md:w-md  rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px]   transition-all  duration-300 ease-in-out hover:shadow-[-10px_10px_30px_rgba(0,0,0,0.18)] w-full md:max-w-[600px]" onClick={() => navigate("/talent")}>
+            <div className="relative bg-[#fff4f0]  min-h-[135px] sm:h-[145px] rounded-tl-[10px] rounded-tr-[80px] rounded-br-[80px] rounded-bl-[80px] px-8 py-8 sm:px-9 sm:py-10 flex items-center justify-between shadow-sm overflow-hidden">
             
             <div className="max-w-[60%]">
               <h5 className="text-[#07152d] font-bold text-lg sm:text-xl md:text-2xl mb-4">

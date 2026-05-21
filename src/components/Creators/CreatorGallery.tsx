@@ -81,11 +81,11 @@ export default function CreatorGallery() {
   };
 
   return (
-    <section className=" py-10 md:py-16">
-      <div className="mx-auto max-w-7xl px-5">
+    <section className=" py-10 md:py-12">
+      <div className="mx-auto max-w-6xl px-5 md:w-xl lg:w-6xl">
 
         {/* ===== TABS ===== */}
-        <div className="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-6">
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5 md:w-xl lg:w-6xl">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -94,8 +94,9 @@ export default function CreatorGallery() {
                 min-w-[180px]
                 rounded-full
                 border
-                px-8
+                px-5
                 py-3
+              
                 font-[Montserrat]
                 text-lg
                 transition-all
@@ -143,7 +144,7 @@ export default function CreatorGallery() {
                   transition-transform
                   duration-500
                   group-hover:scale-105
-                  md:h-[300px]
+                  md:h-[250px]
                 "
               />
 
@@ -151,7 +152,7 @@ export default function CreatorGallery() {
               <div
                 className="
                   absolute
-                  bottom-3
+                  bottom-6
                   left-0
                   
                   flex

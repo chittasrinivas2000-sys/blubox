@@ -70,28 +70,28 @@ const BrandsCreators: React.FC<BrandsCreatorsProps> = ({
               "
             >
               {/* Creator Image */}
-              <div className="h-[170px] overflow-hidden">
+              <div className="h-[340px] overflow-hidden">
                 <img
                   src={creator.creatorImage}
                   alt="creator"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover   rounded-[28px]"
                 />
               </div>
 
               {/* Card Content */}
-              <div className="p-5">
+              <div className="p-4">
                 <div className="flex items-start justify-between gap-5">
                   {/* Brand Logo */}
                   <div className="min-w-[130px] h-[70px] flex items-center">
                     <img
                       src={creator.brandLogo}
                       alt="brand"
-                      className="max-w-[140px] max-h-[55px] object-contain"
+                      className="max-w-[160px] max-h-[75px] object-contain mt-12 ml-2"
                     />
                   </div>
 
                   {/* Right Content */}
-                  <div className="flex-1">
+                  <div className="flex-1 ml-[100px]">
                     {/* Reach */}
                     <div>
                       <p
@@ -110,7 +110,7 @@ const BrandsCreators: React.FC<BrandsCreatorsProps> = ({
                     </div>
 
                     {/* Divider */}
-                    <div className="border-t border-[#d8d8d8] my-3" />
+                    <div className="border-t  border-[#d8d8d8] my-2 w-[120px]" />
 
                     {/* Platform */}
                     <div>
@@ -121,9 +121,9 @@ const BrandsCreators: React.FC<BrandsCreatorsProps> = ({
                         Platform
                       </p>
 
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 bg-[#F5F5F5] rounded-[10px] w-[80px] ">
                         {/* Platform Icon */}
-                        <div className="bg-[#F5F5F5] rounded-[10px] px-2 py-1 flex items-center justify-center">
+                        <div className="  px-2 py-1 flex items-center justify-center">
                           <img
                             src={
                               creator.platform === "instagram"
@@ -136,11 +136,11 @@ const BrandsCreators: React.FC<BrandsCreatorsProps> = ({
                         </div>
 
                         {/* Share Icon */}
-                        <div className="bg-[#F5F5F5] rounded-[10px] p-2 flex items-center justify-center">
+                        <div className=" flex items-center justify-center">
                           <img
                             src={Share}
                             alt="share"
-                            className="w-4 h-4 object-contain"
+                            className="w-4 h-4 object-contain "
                           />
                         </div>
                       </div>

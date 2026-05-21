@@ -1,7 +1,7 @@
 // components/CommonFormSection.tsx
 
 import bgPattern from "../../assets/BWhiteReverse.png.png";
-import MainTop from "../../assets/MainTop.png"
+import MainTop from "../../assets/MainTop.png";
 
 interface FormField {
   label: string;
@@ -29,39 +29,91 @@ export default function CommonFormSection({
   buttonText = "Submit",
 }: CommonFormSectionProps) {
   return (
-    <section className="relative overflow-hidden py-10 md:py-16 lg:pr-30 ">
-          <img
+    <section className="relative overflow-hidden py-10 md:py-16 lg:pr-30">
+      
+      {/* Top Background */}
+      <img
         src={MainTop}
         alt="Background Design"
         className="
-            absolute
-            top-0
-            left-100
-          w-full md:w-3/4 
-            pointer-events-none
-            select-none
+          absolute
+          top-0
+          left-0
+          w-full
+          md:w-3/4
+          pointer-events-none
+          select-none
         "
-        />
-      
+      />
+
       {/* Background Pattern */}
       <img
         src={bgPattern}
         alt="background"
-        className="absolute lg:left-60 lg:top-50 md:top-40 md:left-15 md:h-[300px] lg:w-[500px] pointer-events-none lg:h-[380px] hidden sm:block"
+        className="
+          absolute
+          md:top-35
+          md:left-[130px]
+          lg:left-60
+          lg:top-50
+          md:h-[300px]
+          lg:w-[500px]
+          lg:h-[380px]
+          pointer-events-none
+          hidden
+          sm:block
+        "
       />
 
-<div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-5 px-5 md:flex-row md:items-center md:justify-between md:px-5 lg:mt-15">
-        
+      {/* Main Container */}
+      <div
+        className="
+          relative
+          z-10
+          mx-auto
+          flex
+          max-w-7xl
+          flex-col
+          items-center
+          gap-10
+          px-5
+
+          md:flex-col
+          md:items-center
+          md:justify-center
+
+          lg:flex-row
+          lg:items-center
+          lg:justify-between
+          lg:mt-15
+        "
+      >
+
         {/* Left Content */}
-      <div className="w-full md:w-[35%] md:ml-50">
+        <div
+          className="
+            w-full
+
+            md:w-full
+            md:max-w-[650px]
+          
+            md:ml-[220px]
+            lg:w-[35%]
+            lg:ml-50
+          "
+        >
           <h2
             className="
               font-[Michroma]
               text-[42px]
               leading-[1.1]
               text-[#1D2230]
+
               sm:text-[56px]
-              md:text-[40px]
+
+              md:text-[52px]
+
+              lg:text-[40px]
             "
           >
             {title}
@@ -71,12 +123,12 @@ export default function CommonFormSection({
             <h3
               className="
                 mt-4
+                max-w-[400px]
                 font-[Montserrat]
                 text-md
                 font-bold
                 text-[#1D2230]
                 md:text-lg
-                max-w-[400px]
               "
             >
               {subtitle}
@@ -111,22 +163,25 @@ export default function CommonFormSection({
         </div>
 
         {/* Right Form */}
-            <div
-        className="
+        <div
+          className="
             w-full
             rounded-[40px]
             bg-black
             p-4
+
             sm:p-8
-            md:w-[50%]
-          
+
+            md:w-full
+            md:max-w-[570px]
             md:p-6
+
             lg:min-h-[500px]
-           lg:min-w-[500px]
-        "
+            lg:min-w-[500px]
+          "
         >
           <form className="space-y-2">
-            
+
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {fields.map((field, index) => (
                 <div
@@ -152,7 +207,7 @@ export default function CommonFormSection({
                       rows={1}
                       className="
                         w-full
-                        rounded-lg
+                        rounded-[20px]
                         border
                         border-[#293040]
                         bg-transparent
@@ -162,7 +217,6 @@ export default function CommonFormSection({
                         text-white
                         outline-none
                         placeholder:text-[#5B6780]
-                        rounded-[20px]
                       "
                     />
                   ) : (

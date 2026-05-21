@@ -25,7 +25,7 @@ const CelebrityCreators: React.FC<CelebrityCreatorsProps> = ({
     <section className="w-full  py-10 overflow-hidden">
       <div className="max-w-full mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8 ml-[100px]">
+        <div className="flex items-center justify-between mb-8 ml-[150px]">
           <h2
             className="text-[24px] md:text-[34px] text-[#1d1d1d]"
             style={{ fontFamily: "Michroma" }}
@@ -37,7 +37,7 @@ const CelebrityCreators: React.FC<CelebrityCreatorsProps> = ({
             <button
               className="border border-black rounded-full 
               px-5 py-2 text-sm md:text-base
-              hover:bg-black hover:text-white transition-all duration-300 mr-[100px]"
+              hover:bg-black hover:text-white transition-all duration-300 mr-[150px]"
               style={{ fontFamily: "Montserrat" }}
             >
               View All

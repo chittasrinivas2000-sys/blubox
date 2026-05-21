@@ -3,7 +3,7 @@ import MainTop from "../../assets/MainTop.png"
 
 const JoinCommunity = () => {
   return (
-    <section className="relative overflow-hidden  px-4 py-16 md:px-8 lg:px-20">
+    <section className="relative overflow-hidden  px-4 py-1 md:px-10 lg:px-20  lg:mr-5">
       
       {/* Background Text */}
       <img
@@ -19,14 +19,14 @@ const JoinCommunity = () => {
         "
         />
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-start justify-between gap-12 lg:flex-row lg:items-center lg:mt-15">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-start justify-between gap-0 lg:flex-row  lg:mt-[100px] lg:mr-[100px] md:mt-[60px] mt-10">
         
         {/* Left Content */}
-        <div className="w-full lg:max-w-2xl">
+        <div className="w-[370px] mx-auto mb-4 lg:max-w-md lg:mt-[130px] lg:ml-[140px] md:w-md md:mx-auto md:mb-2">
           <h2
             className="
               text-[#1E2230]
-              text-5xl
+              text-4xl
               sm:text-xl
               md:text-5xl
               lg:text-5xl
@@ -41,18 +41,18 @@ const JoinCommunity = () => {
             {' '}Community
           </h2>
 
-          <h3 className="mt-6 text-lg md:text-xl font-bold text-[#2A2F3F] leading-snug font-['Montserrat']">
+          <h3 className="mt-4 text-lg md:text-lg font-bold text-[#2A2F3F] leading-snug font-['Montserrat']">
             Ever wonder why some creators grow fast while others don’t?
           </h3>
 
-          <p className="mt-6 text-base md:text-[17px] leading-relaxed text-[#3B4152] font-['Montserrat']">
+          <p className="mt-4 text-base md:text-[15px] leading-relaxed text-[#3B4152] font-['Montserrat']">
             The ones who grow usually have a strong team behind them.
             At Blubox, we help you with brand deals, payments, editing,
             and even getting more work from our creator network.
             You get to focus on making great content — we handle the rest.
           </p>
 
-          <p className="mt-8 text-base md:text-[20px] text-[#3B4152] font-['Montserrat']">
+          <p className="mt-4 text-base md:text-[17px] text-[#3B4152] font-['Montserrat']">
             Create more, worry less. Let’s grow together.
           </p>
         </div>
@@ -61,9 +61,9 @@ const JoinCommunity = () => {
        <div
         className="
             w-full
-            lg:max-w-md
+            lg:max-w-xl
             h-auto
-            lg:h-[500px]
+            lg:h-2xl
             md:ml-auto
             md:mr-auto
             md:w-xl
@@ -72,7 +72,7 @@ const JoinCommunity = () => {
             sm:mt-1
             p-5
             md:p-6
-            lg:p-5
+            lg:p-7
 
             shadow-2xl
         "
@@ -82,7 +82,7 @@ const JoinCommunity = () => {
             {/* Creator Name */}
             <div>
             <label className="mb-2 block text-sm lg:text-base font-medium text-white font-['Montserrat']">
-                Creator Name
+              Brand Name
             </label>
 
             <input
@@ -104,9 +104,34 @@ const JoinCommunity = () => {
                 "
             />
             </div>
+              <div>
+            <label className="mb-2 block text-sm lg:text-base font-medium text-white font-['Montserrat']">
+              Full Name
+            </label>
 
-            
-            <div>
+            <input
+                type="text"
+                placeholder="Full Name"
+                className="
+                w-full
+                rounded-full
+                border border-[#2F3545]
+                bg-transparent
+
+                px-4
+                py-2 lg:py-2
+
+                text-sm
+                text-white
+                outline-none
+                placeholder:text-[#6C7385]
+                "
+            />
+            </div>
+
+
+            <div className="flex gap-5">
+            <div className="w-1/2">
             <label className="mb-2 block text-sm lg:text-base font-medium text-white">
                 Phone Number
             </label>
@@ -132,7 +157,7 @@ const JoinCommunity = () => {
             </div>
 
             {/* Email */}
-            <div>
+            <div className="w-1/2">
             <label className="mb-2 block text-sm lg:text-base font-medium text-white">
                 Email
             </label>
@@ -156,11 +181,11 @@ const JoinCommunity = () => {
                 "
             />
             </div>
-
+          </div>
             {/* YouTube */}
             <div>
             <label className="mb-2 block text-sm lg:text-base font-medium text-white">
-                YouTube Link
+                Brand Website Link
             </label>
 
             <input
@@ -186,20 +211,44 @@ const JoinCommunity = () => {
             {/* Instagram */}
             <div>
             <label className="mb-2 block text-sm lg:text-base font-medium text-white">
-                Instagram Link
+                Message
             </label>
 
-            <input
-                type="url"
-                placeholder="Paste Your Link here"
+            <textarea
+              
+                placeholder="Your message"
                 className="
                 w-full
-                rounded-full
+                rounded-md
                 border border-[#2F3545]
                 bg-transparent
 
                 px-4
                 py-2
+
+                text-sm
+                text-white
+                outline-none
+                placeholder:text-[#6C7385]
+                "
+            />
+            </div>
+             <div>
+            <label className="mb-2 block text-sm lg:text-base font-medium text-white">
+                Message
+            </label>
+
+            <textarea
+              
+                placeholder="Your Note"
+                className="
+                w-full
+                rounded-md
+                border border-[#2F3545]
+                bg-transparent
+
+                px-6
+                py-4
 
                 text-sm
                 text-white

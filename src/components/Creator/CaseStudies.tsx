@@ -66,7 +66,7 @@ const CaseStudies: React.FC = () => {
             <div
               key={index}
               className="
-          
+            w-[390px]
                 border border-[#D8D8D8]
                 rounded-[28px]
                 overflow-hidden
@@ -75,26 +75,20 @@ const CaseStudies: React.FC = () => {
               "
             >
               {/* Image */}
-              <div className="relative p-4 pb-0">
+              <div className="relative pb-0">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="
                     w-full
-                    h-[280px]
+                    h-[370px]
                     object-cover
                     rounded-[24px]
                   "
                 />
 
                 {/* Slider Dots */}
-                <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2">
-                  <div className="w-2.5 h-2.5 bg-white rounded-full" />
-                  <div className="w-2.5 h-2.5 bg-gray-400 rounded-full" />
-                  <div className="w-2.5 h-2.5 bg-gray-400 rounded-full" />
-                  <div className="w-2.5 h-2.5 bg-gray-400 rounded-full" />
-                  <div className="w-2.5 h-2.5 bg-gray-400 rounded-full" />
-                </div>
+                
               </div>
 
               {/* Content */}
@@ -125,7 +119,7 @@ const CaseStudies: React.FC = () => {
                   </div>
 
                   {/* Divider */}
-                  <div className="w-[1px] h-[42px] bg-[#D3D3D3]" />
+                  
 
                   {/* Creators */}
                   <div>

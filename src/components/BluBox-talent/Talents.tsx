@@ -3,7 +3,7 @@ import campaignCircle from "../../assets/girl2.png"
 
 const Talents =()=>{
     return(
-       <section className="relative overflow-hidden  px-4 py-10 sm:px-6 md:px-10 lg:px-20 ">
+       <section className="relative overflow-hidden  px-4 py-0 sm:px-6 md:px-10 lg:px-20  ">
         <img
             src={MainTop}
             alt="Background Design"
@@ -16,7 +16,7 @@ const Talents =()=>{
                 select-none
             "
             />
-             <div className=" px-4 py-12 md:px-10 lg:px-20 mt-5">
+             <div className=" px-1 py-12 md:px-10 lg:px-20 md:mt-5 lg:mt-15">
       <div
         className="
           mx-auto
@@ -47,7 +47,7 @@ const Talents =()=>{
           >
             Blubox
             <br />
-            Campaigns
+         Talents
           </h2>
 
           <p

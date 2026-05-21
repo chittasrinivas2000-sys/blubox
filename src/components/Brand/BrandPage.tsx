@@ -1,4 +1,5 @@
-import CommonFormSection from "../Creators/CommonForm"
+
+import FormSection from "./form"
 import Footer from "../Creator/Footer1"
 import BrandsCreators from "../BluBox-talent/BrandsCreators"
 import creator1 from "../../assets/lady5.jpg"
@@ -11,6 +12,7 @@ import creator4 from "../../assets/lady8.jpg"
 import lenskartLogo from "../../assets/lenskart.jpg"
 import creator5 from "../../assets/lady9.jpg"
 import plumLogo from "../../assets/simple.jpg"
+
 
 const creators1 = [
   {
@@ -53,7 +55,8 @@ const creators1 = [
 function BrandPage() {
   return (
     <div>
-      <CommonFormSection title="Kick start your"
+  
+  <FormSection title="Kick start your"
   subtitle="Influencer Marketing"
   description="Our efficient and effective influencer marketing campaigns act as a catalyst in your digital marketing. We significantly reduce user acquisition costs and improve user retention through our compelling content."
   buttonText="Submit"
@@ -92,6 +95,7 @@ function BrandPage() {
       textarea: true,
     },
   ]}/>
+
   <BrandsCreators title="Brands X Our Creators"
                 creators={creators1}/>
     <Footer/>

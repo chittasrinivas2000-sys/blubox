@@ -86,7 +86,7 @@ const BluBoxTalentPage =()=>{
         <>
             <Talents/>
              <JoinCommunity/>
-            <TalentServices/>
+            
            
             <CelebrityCreators 
             title="Celebrity Creators"

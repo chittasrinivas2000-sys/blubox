@@ -2,20 +2,20 @@ import girlsImg from "../../assets/group.png";
 
 export default function JoinCommunity() {
   return (
-    <section className="overflow-hidden bg-[#FFE6DC] py-1 md:py-1">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-6 md:flex-row md:px-12">
+    <section className="overflow-hidden bg-[#FFE6DC] py-1 md:py-0 lg:py-0">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-18 md:pl-0  md:flex-row md:px-12">
         
         {/* Left Image */}
         <div className="flex justify-center md:w-1/2">
           <img
             src={girlsImg}
             alt="Creators"
-            className="w-full max-w-[650px] object-contain max-h-[800px]"
+           className="w-full  h-[400px] md:h-[380px] lg:h-[312px]  object-cover"
           />
         </div>
 
         {/* Right Content */}
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left lg:mb-2 mb-5">
           <h2
             className="
               font-[Michroma]
@@ -23,7 +23,7 @@ export default function JoinCommunity() {
               text-4xl
               leading-tight
               sm:text-4xl
-              md:text-5xl
+              md:text-4xl
             "
           >
             Join Our <br />
@@ -33,7 +33,7 @@ export default function JoinCommunity() {
           <p
             className="
               mt-4
-              max-w-lg
+              max-w-2xl
               font-[Montserrat]
               text-base
               leading-8
@@ -51,8 +51,8 @@ export default function JoinCommunity() {
               mt-6
               rounded-full
               bg-black
-              px-10
-              py-4
+              px-15
+              py-2
               font-[Montserrat]
               text-lg
               font-semibold

@@ -1,62 +1,66 @@
-import cyanLeft from "../../../assets/glass-top-1.webp"
-import cyanRight from "../../../assets/glass-top-2.webp"
+import cyanLeft from "../../../assets/glass-top-1.png"
+import cyanRight from "../../../assets/glass-top-2.png"
 import influencerImg from "../../../assets/brand-img.webp"
 
 const stats = [
   {
-    value: "2K+",
+    value: "2",
     label: "Creator Network",
     bg: cyanLeft,
+    power:"K+"
   },
   {
-    value: "5B+",
+    value: "5",
     label: "Views Generated",
     bg: cyanRight,
+     power:"B+"
   },
   {
-    value: "100+",
+    value: "100",
     label: "Content Created Yearly",
     bg: cyanLeft,
+     power:"+"
   },
   {
-    value: "1K+",
+    value: "1",
     label: "Promotional Content",
     bg: cyanRight,
+     power:"K+"
   },
 ]
 
 export default function InfluenceSection() {
   return (
-   <section className="w-full py-10 lg:py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+   <section className="w-full py-10 lg:py-20 overflow-hidden md:px-4 lg:px-0">
+      <div className="max-w-8xl mx-auto px-6 lg:ml-[140px]">
         {/* Heading */}
-        <h2 className="text-start text-[#1B2230] text-4xl md:text-5xl lg:text-6xl  tracking-tight mb-16">
+        <h2 className="text-start text-[#1B2230] text-4xl md:text-3xl lg:text-5xl font-['Michroma']  tracking-tight mb-16">
           Think Influence, Think BLUBOX
         </h2>
 
         {/* Layout */}
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-2 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 lg:gap-[80px] items-center">
           {/* Left Cards */}
-          <div className="grid grid-cols-2 gap-x-3 gap-y-0 sm:gap-x-4 sm:gap-y-1 w-full">
+          <div className="grid grid-cols-2 gap-x-2 gap-y-0 sm:gap-x-4 sm:gap-y-1 w-full">
             {stats.map((item, index) => (
               <div
                 key={index}
-                className="relative flex items-center justify-center aspect-[1.40/1] "
+                className="relative flex items-center justify-center aspect-[2.2/1.4] "
               >
                 {/* Background Shape */}
                 <img
                   src={item.bg}
                   alt=""
-                  className="absolute inset-0 w-[750px] md:w-[750px] lg:w-[900px] object-contain h-full "
+                  className="absolute inset-0 w-[750px] md:w-[750px] lg:w-[1000px] object-contain "
                 />
 
                 {/* Content */}
                 <div className="relative z-10 text-center px-6">
-                  <h3 className="text-[#2C6B63] text-[34px] sm:text-[54px] lg:text-[64px] leading-none font-light">
-                    {item.value}
+                  <h3 className="text-[#2C6B63] text-[34px] sm:text-[54px] lg:text-[35px]  font-['Michroma'] leading-none font-medium">
+                    {item.value}<sup className="font-extrabold font-['Montserrat']">{item.power}</sup>
                   </h3>
 
-                  <p className="mt-2 sm:mt-3 text-[10px] sm:text-lg lg:text-xl text-[#0B1320] font-medium leading-tight">
+                  <p className="mt-2 sm:mt-3 text-[10px] sm:text-lg lg:text-md text-[#0B1320] font-['Montserrat'] font-medium leading-tight">
                     {item.label}
                   </p>
                 </div>
@@ -65,8 +69,8 @@ export default function InfluenceSection() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="overflow-hidden  w-full max-w-[520px]">
+          <div className="flex justify-center lg:justify-start">
+            <div className="overflow-hidden  w-full max-w-[475px]">
               <img
                 src={influencerImg}
                 alt="Influencer"

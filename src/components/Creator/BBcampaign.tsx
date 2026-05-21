@@ -38,11 +38,11 @@ const BBCampaign: React.FC = () => {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
           {campaignData.map((item, index) => (
             <div
               key={index}
-              className="relative text-center px-4 flex flex-col items-center"
+              className="relative text-center px-0 flex flex-col items-center"
             >
               {/* Vertical Line */}
               {index !== campaignData.length - 1 && (
@@ -51,10 +51,13 @@ const BBCampaign: React.FC = () => {
                     hidden md:block 
                     absolute 
                     right-0 
+                    lg:left-[410px]
+                    md:left-[250px]
+                    md:h-[250px]
                     top-[200px] 
-                    h-[160px] 
+                    h-[180px] 
                     w-[1px] 
-                    bg-gray-300
+                    bg-[#E5E5E5]
                   "
                 />
               )}
@@ -66,29 +69,31 @@ const BBCampaign: React.FC = () => {
                   alt={item.title}
                   className="
                     w-full 
-                    max-w-[351px] 
-                    h-[190px] 
+                    lg:max-w-[450px] 
+                    lg:h-[220px] 
+                    md:h-[170px]
                     
                     rounded-[60px]
                   "
                 />
               </div>
 
-              {/* Title */}
+            <div className="md:w-[150px] md:mx-auto">
               <h3
-                className="text-[24px] font-semibold text-black mb-3"
+                className="text-[24px] font-semibold text-black mb-3 md:text-md"
                 style={{ fontFamily: "Montserrat" }}
               >
                 {item.title}
               </h3>
 
-              {/* Description */}
+          
               <p
                 className="text-[14px] text-[#5A5A5A] leading-relaxed max-w-[300px]"
                 style={{ fontFamily: "Montserrat" }}
               >
                 {item.description}
               </p>
+              </div>
             </div>
           ))}
         </div>
